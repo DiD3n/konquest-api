@@ -3,7 +3,7 @@
     "start": "deno run --allow-net --allow-read --allow-write --allow-env src/server.ts",
     "dev": "deno run --allow-net --allow-read --allow-write --allow-env --watch src/server.ts",
     "test": "deno test --allow-net --allow-env",
-    "generate-mock-data": "deno run --allow-read --allow-write --allow-env src/db/generate_events.ts"
+    "generate-mock-data": "deno run --allow-read --allow-write --allow-env src/dbUtils/generate_events.ts"
   },
   "imports": {
     "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
