@@ -1,0 +1,9 @@
+konquest.db
+*.log
+node_modules/
+.DS_Store
+.env
+*.sqlite
+*.sqlite3
+*.bak
+*.tmp 

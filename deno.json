@@ -1,0 +1,25 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read --allow-write --allow-env src/server.ts",
+    "dev": "deno run --allow-net --allow-read --allow-write --allow-env --watch src/server.ts",
+    "test": "deno test --allow-net --allow-env",
+    "generate-mock-data": "deno run --allow-read --allow-write --allow-env src/db/generate_events.ts"
+  },
+  "imports": {
+    "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
+    "zod": "npm:zod@3.22.4",
+    "zod-fixture": "npm:zod-fixture@2.5.2",
+    "sqlite": "https://deno.land/x/sqlite@v3.8.0/mod.ts",
+    "@/db/": "./src/db/",
+    "@/event/": "./src/event/",
+    "@/quest/": "./src/quest/",
+    "@/mock/": "./src/mock/",
+    "@/static/": "./static/",
+    "@/user.type.ts": "./src/user.type.ts",
+    "google-auth-library": "npm:google-auth-library@9.11.0"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window"],
+    "strict": true
+  }
+} 
